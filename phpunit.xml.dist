@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd" 
+colors="true" 
+bootstrap="./tests/classes/bootstrap.php" 
+stopOnFailure="false" 
+cacheDirectory=".phpunit.cache">
+  <coverage/>
+  <testsuites>
+    <testsuite name="unit">
+      <directory>./tests/classes/Unit</directory>
+    </testsuite>
+  </testsuites>
+  <source>
+    <include>
+      <directory suffix=".php">./classes/</directory>
+    </include>
+  </source>
+  <extensions>
+      <bootstrap class="RobinIngelbrecht\PHPUnitPrettyPrint\PhpUnitExtension">
+      </bootstrap>
+  </extensions>  
+</phpunit>

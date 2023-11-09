@@ -1,0 +1,40 @@
+{
+    "name": "shasoft/batch",
+    "type": "library",
+    "description": "Batching function calls",
+    "keywords": [
+        "batch",
+        "grouping",
+        "call",
+        "cache"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shasoft\\Batch\\": "classes"
+        }
+    },
+    "require": {
+        "shasoft/data": "*",
+        "shasoft/cdump": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10",
+        "robiningelbrecht/phpunit-pretty-print": "^1.2",
+        "shasoft/cdump": "*",
+        "shasoft/dump": "*",
+        "shasoft/psr-cache": "*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shasoft\\Batch\\Tests\\": "tests/classes"
+        }
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Shabanov Valera",
+            "email": "shasoft_batch@shasoft.com"
+        }
+    ]
+}
